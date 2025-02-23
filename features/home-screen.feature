@@ -17,6 +17,7 @@ Given I’m on the Home Screen,
 When I tap the Start Order button,
 Then I should be taken to the Order Page, where I can begin choosing my drinks.
 
+Scenario 2:
 Given I’m on the Home Screen,
 When I tap the Shopping Cart button,
 Then I should be taken to the Shopping Cart Page, where I can see the drinks I’ve added.
