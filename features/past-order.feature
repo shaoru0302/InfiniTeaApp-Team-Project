@@ -1,29 +1,40 @@
-Feature: Navigation from Home Screen
+Feature: View and Reorder Past Orders
 
-As a customer using the InfiniTea App,
-I want to easily navigate from the home screen to different parts of the app,
-So that I can quickly start an order, check my cart, or review my past orders without any hassle.
+As a customer using the App,
+I want to access my past orders from the homepage and reorder drinks,
+So that I can quickly track my purchases and effortlessly reorder my favorite drinks.
 
-S - The home screen should have buttons that let users quickly access the order page, shopping cart, and order history with a single tap.
-M - Users should be able to reach any of these three pages within one tap and under 2 seconds.
-A - This feature can be completed within one agile iteration (1 week).
-R - Easy navigation helps users quickly place orders and check their cart or order history.
+S - Users should be able to click "My Orders" from the homepage, view past orders, and reorder in one tap.
+M - Users should reach their order history within 2 seconds and reorder in 1 tap.
+A - This feature can be implemented within one agile iteration.
+R - It enhances user convenience by making order tracking and reordering seamless.
 T - This feature will be completed and tested by the end of May 2025.
 
-Scenarios for the Home Screen
+Scenario 1: Access past orders from the homepage  
+   Given I am on the homepage  
+   When I click the "My Orders" button  
+   Then I should be taken to the "Order History" page  
+   And I should see a list of my past orders sorted by date  
 
-Scenario 1: Starting a New Order
-Given I’m on the Home Screen,
-When I tap the Start Order button,
-Then I should be taken to the Order Page, where I can begin choosing my drinks.
+Scenario 2: Search and filter my past orders by order number  
+   Given I am on the "My Orders" page  
+   When I enter an order number in the search bar  
+   Then I should see only the matching order displayed  
+   And if the order number does not exist, I should see a message "Order not found"  
 
-Scenario 2: Checking my Shopping Cart
-Given I’m on the Home Screen,
-When I tap the Shopping Cart button,
-Then I should be taken to the Shopping Cart Page, where I can see the drinks I’ve added.
-And if there are no items in the cart, a pop-up message should appear saying, "Your cart is empty."
-
-Scenario 3: Viewing My Past Orders
-Given I’m on the Home Screen,
-When I tap the My Order button,
-Then I should be taken to the Order History Page, where I can check the details of my past orders.
+Scenario 3: Reorder a past order 
+   Given I am on the "My Orders" page
+   And I see the favorite drink on the list   
+   When I tap the "Reorder" button on the selected past order  
+   Then the same drinks with the same customizations should be added to my shopping cart  
+   And I should see a confirmation message "Your drinks have been added to the cart!" 
+   And items in the cart and the total price should be updated accordingly 
+  
+Scenario 4: Reorder a past order when an item is out of stock  
+   Given I am on the "My Orders" page  
+   And I find my favorite drink on the list  
+   When I tap the "Reorder" button on the selected past order  
+   Then the system should check if all items in the order are available  
+   And if one or more items are out of stock, I should see the message "Some items are out of stock" 
+   And only the available items should be added to my shopping cart 
+   And I should see a confirmation message "Your updated order has been added to the cart!"  
