@@ -25,13 +25,17 @@ Scenario: Confirm order
 Scenario: Remove a product from the list
     Given I am on the shopping cart
     When I click the "X" mark on the right-hand side of the product
+    Then a comfirm message will pop up and ask "Sure to remove items?" 
+    When click confirm button
     Then the product should be removed from the list
+    And the total price will be updated
 
 
 
-Scenario: Return to edit a product
-   Given I am on the shopping cart
+Scenario: edit a product in the shopping cart
+   Given I am on the shopping cart page
    When I click a product shown in the cart list
-   Then I will be taken back to the order page, allowing users to modify product detail 
+   Then I will be taken back to the order page, I should be able to modify product details
+   And the changes should be updated in the cart
 
 
