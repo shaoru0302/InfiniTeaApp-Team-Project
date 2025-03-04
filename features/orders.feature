@@ -1,7 +1,7 @@
-Feature: Placing an Order
-  As a user
-  I want to place my order online 
-  So that I can avoid long wait times and recieve my drink within 5mins
+Feature: Order menu item
+  As a customer,
+  I want to order a classic drink online 
+  So that I can avoid long wait times and recieve my menu drink within 5mins
 
 S - Reduces in-store wait time by ordering online  
 M - You get your drink within 5 minutes
@@ -9,16 +9,12 @@ A - Can be completed in one agile iteration
 R - Goal is to improve the user experience via shorter wait times
 T - To be implemented by the end of May 2025
 
-Scenario: Build Your own
-    Given I am on the -Order page-
-    When I choose my drink size
-    Then I click Build your own
-    Then I can go to the -Build your own- page
-
-Scenario: Classic Drink
-    Given I am on the -Order page-
-    When I pick a Classic drink
-    Then I choose the drink size
+Scenario: Ordering drink
+    Given I am on the -Home Screen-
+    When I click Start Order
+    Then I am on the -Order Page-
+    Then I choose a Classic Drink from the options avaliable
+    Then I choose the size of my drink
     Then I chose the amount of sugar
     Then I chose the amount of ice
     Then I click Add to Cart
