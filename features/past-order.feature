@@ -13,8 +13,9 @@ T - This feature will be completed and tested by the end of May 2025.
 Scenario 1: Access past orders from the homepage  
    Given I am on the homepage  
    When I click the "My Orders" button  
-   Then I should be taken to the "Order History" page  
-   And I should see a list of my past orders sorted by date  
+   Then I should be taken to the "My Orders" page  
+   And I should see a list of my past orders
+   And if there no order exists yet, I should see a empty list
 
 Scenario 2: Search and filter my past orders by order number  
    Given I am on the "My Orders" page  
@@ -25,7 +26,7 @@ Scenario 2: Search and filter my past orders by order number
 Scenario 3: Reorder a past order 
    Given I am on the "My Orders" page
    And I see the favorite drink on the list   
-   When I tap the "Reorder" button on the selected past order  
+   When I select some items, also tap the "Reorder" button
    Then the same drinks with the same customizations should be added to my shopping cart  
    And I should see a confirmation message "Your drinks have been added to the cart!" 
    And items in the cart and the total price should be updated accordingly 
@@ -33,8 +34,10 @@ Scenario 3: Reorder a past order
 Scenario 4: Reorder a past order when an item is out of stock  
    Given I am on the "My Orders" page  
    And I find my favorite drink on the list  
-   When I tap the "Reorder" button on the selected past order  
+   When I select some items, also tap the "Reorder" button  
    Then the system should check if all items in the order are available  
    And if one or more items are out of stock, I should see the message "Some items are out of stock" 
-   And only the available items should be added to my shopping cart 
-   And I should see a confirmation message "Your updated order has been added to the cart!"  
+   And only the available items should be added to my shopping cart
+   When I tap the "Reorder" button again
+   Then I should see a confirmation message "Your updated order has been added to the cart!"  
+   And items in the cart and the total price should be updated accordingly
