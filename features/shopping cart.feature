@@ -9,6 +9,15 @@ A - This can be achieved within a agile iteration (one week)
 R - Customers should be able to easily manage their cart, ensuring a smooth and hassle-free shopping experience
 T - To be implemented by the end of May 2025
 
+
+Scenario: edit a product in the shopping cart
+   Given: I am on the home screen
+   when I am on the shopping cart page
+   then I click a product shown in the cart list
+   Then I will be taken back to the order page, I should be able to modify product details
+   And the changes should be updated in the cart
+
+
 Scenario: Remove all products from the list
     Given I am on the shopping cart
     When I click the "Remove All" button
@@ -32,10 +41,5 @@ Scenario: Remove a product from the list
 
 
 
-Scenario: edit a product in the shopping cart
-   Given I am on the shopping cart page
-   When I click a product shown in the cart list
-   Then I will be taken back to the order page, I should be able to modify product details
-   And the changes should be updated in the cart
 
 
