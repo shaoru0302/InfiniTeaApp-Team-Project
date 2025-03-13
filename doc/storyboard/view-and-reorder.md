@@ -4,6 +4,7 @@
 As a customer using the App,  
 I want to access my past orders from the homepage and reorder drinks,  
 So that I can quickly track my purchases and effortlessly reorder my favorite drinks.
+[User Story](../../features/view-and-reorder.feature)
 
 ## **Step 1: Access the My Orders Page**
 - The user opens the app and taps on **"My Orders"** from the homepage.  
