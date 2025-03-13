@@ -4,7 +4,7 @@
 As a customer,
   I want to order a classic drink/s online 
   So that I can avoid long wait times and recieve my menu drink within 5mins.
-[User Story](../../features/orders.feature)
+[User Story](../../features/classic-order.feature)
 
 ## **Step 1: Access the Menu Page**
 - The user opens the app and taps on **"My Orders"** from the homepage.  
