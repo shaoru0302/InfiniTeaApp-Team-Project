@@ -10,11 +10,11 @@ R - Allowing the customer to have their perfect drink.
 T - To be completed by the end of May 2025.
 
 Scenario: I want to go to -Build your own- page
-  Given I am on the home screen
-  When I press the "Start Order" button
-  Then I will go to the "Order" page
-  When I press the "Build your own" button
-  Then I will go to "Build your own" page
+  Given I am on the home screen,
+  When I press the "Start Order" button,
+  Then I will go to the "Order" page,
+  When I press the "Build your own" button,
+  Then I will go to "Build your own" page.
 
 Scenario: I want to have multiple toppings
   Given I'm on the "Build your own" screen,  
@@ -26,7 +26,8 @@ Scenario: I want to only have 50% ice in my drink
   When I click on the 50% ice amount option,
   Then The drink will contain that amount of ice.
 
-Scenario: I want to order my drink.
+Scenario: I want to finish building my drink.
   Given I'm on the "Build your own" screen,
-  When I add the drink to my cart,
-  Then I will be taken to the "Shopping Cart" screen.
+  When I click "Place Order",
+  Then It will be added to the cart and I will be taken to the -Menu- page.
+  
