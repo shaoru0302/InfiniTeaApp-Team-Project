@@ -2,16 +2,16 @@
 
 
 ## **User Story**
-As a customer
-I want to view the listed products I have added to the cart
-So that I can edit the product, remove it from the list, and confirm my purchase
-[User Story](features/shopping cart.feature)
+As a customer,
+I want to view the listed products I have added to the cart,
+So that I can edit the product, remove it from the list and confirm my purchase.
+[User Story](features/shopping cart.Feature)
 
 
 
 ## **Step 1: Access the Menu Page**
 - The client opens the app and taps  **"Shopping Cart"** from the homepage.
-![Menu Page](doc/images/Shopping-cart/HomeScreen-page.jpg)
+![Menu Page](../images/Shopping-cart/HomeScreen-page.jpg)
 
 
 ---
