@@ -26,7 +26,7 @@ Scenario: I want to only have 50% ice in my drink
   When I click on the 50% ice amount option,
   Then The drink will contain that amount of ice.
 
-Scenario: I want to finish building my drink.
+Scenario: I have finished building my drink.
   Given I'm on the "Build your own" screen,
   When I click "Place Order",
   Then It will be added to the cart and I will be taken to the -Menu- page.
