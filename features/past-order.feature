@@ -10,20 +10,20 @@ A - This feature can be implemented within one agile iteration.
 R - It enhances user convenience by making order tracking and reordering seamless.
 T - This feature will be completed and tested by the end of May 2025.
 
-Scenario 1: Access past orders from the homepage  
+Scenario: Access past orders from the homepage  
    Given I am on the homepage  
    When I click the "My Orders" button  
    Then I should be taken to the "My Orders" page  
    And I should see a list of my past orders
    And if there no order exists yet, I should see a empty list
 
-Scenario 2: Search and filter my past orders by order number  
+Scenario: Search and filter my past orders by order number  
    Given I am on the "My Orders" page  
    When I enter an order number in the search bar  
    Then I should see only the matching order displayed  
    And if the order number does not exist, I should see a message "Order not found"  
 
-Scenario 3: Reorder a past order 
+Scenario: Reorder a past order 
    Given I am on the "My Orders" page
    And I see the favorite drink on the list   
    When I select some items, also tap the "Reorder" button
@@ -31,7 +31,7 @@ Scenario 3: Reorder a past order
    And I should see a confirmation message "Your drinks have been added to the cart!" 
    And items in the cart and the total price should be updated accordingly 
   
-Scenario 4: Reorder a past order when an item is out of stock  
+Scenario: Reorder a past order when an item is out of stock  
    Given I am on the "My Orders" page  
    And I find my favorite drink on the list  
    When I select some items, also tap the "Reorder" button  
