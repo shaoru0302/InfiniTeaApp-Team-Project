@@ -11,9 +11,9 @@ T - To be implemented by the end of May 2025
 
 
 Scenario: edit a product in the shopping cart
-   Given: I am on the home screen
-   when I am on the shopping cart page
-   then I click a product shown in the cart list
+   Given I am on the home screen
+   When I am on the shopping cart page
+   Then I click a product shown in the cart list
    Then I will be taken back to the order page, I should be able to modify product details
    And the changes should be updated in the cart
 
