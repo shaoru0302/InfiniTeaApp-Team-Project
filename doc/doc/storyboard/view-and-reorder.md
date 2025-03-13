@@ -9,7 +9,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 
 ## **Step 1: Access the My Orders Page**
 - The user opens the app and taps on **"My Orders"** from the homepage.  
-![My Orders Page](../images/Home-page.jpg)
+![My Orders Page](../images/home-page.jpg)
 
 ---
 
@@ -36,7 +36,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 
 ## **Step 4: Select an Order for Reordering**
 - The user selects a **previously placed order** they want to reorder, also tap the "Reorder" button  
-![Select Past Order](../images/select-past-order.jpg)
+![Select Past Order](../images/selected-past-order.jpg)
 
 - The system checks the **availability of all items**.  
 - The user should see a confirmation message "Your drinks have been added to the cart!" 
