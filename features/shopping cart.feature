@@ -22,12 +22,16 @@ Scenario: Remove all products from the list
     Given I am on the shopping cart
     When I click the "Remove All" button
     Then all the products on the list will be removed
+    And the Remove All button will be disable
+    And the change will be updated  
+    
   
 
 Scenario: Confirm order
     Given I am on the shopping cart
     When I click the "Order" button
     Then the order will be placed
+    Then users will be automatically back to the home page 
     And if the cart is empty, the order button will be disabled
    
 
@@ -37,7 +41,7 @@ Scenario: Remove a product from the list
     Then a comfirm message will pop up and ask "Sure to remove items?" 
     When click confirm button
     Then the product should be removed from the list
-    And the total price will be updated
+    And the update will be applie to the cart 
 
 
 
