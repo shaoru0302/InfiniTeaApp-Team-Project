@@ -9,7 +9,7 @@ A - This can be completed within an agile iteration.
 R - Allowing the customer to have their perfect drink.
 T - To be completed by the end of May 2025.
 
-Scenario: I want to build my own drink
+Scenario: I want to go to -Build your own- page
   Given I am on the home screen
   When I press the "Start Order" button
   Then I will go to the "Order" page
