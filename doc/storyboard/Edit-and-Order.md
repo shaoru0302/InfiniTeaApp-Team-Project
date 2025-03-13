@@ -5,7 +5,7 @@
 As a customer,
 I want to view the listed products I have added to the cart,
 So that I can edit the product, remove it from the list and confirm my purchase.
-[User Story](../../features/shopping cart.Feature)
+[User Story](../../features/shopping-cart.feature)
 
 
 
