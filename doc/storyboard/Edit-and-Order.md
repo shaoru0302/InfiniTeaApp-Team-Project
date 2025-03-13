@@ -5,7 +5,7 @@
 As a customer
 I want to view the listed products I have added to the cart
 So that I can edit the product, remove it from the list, and confirm my purchase
-[User Story](../../features/shopping cart.feature)
+[User Story](features/shopping cart.feature)
 
 
 
@@ -53,6 +53,6 @@ So that I can edit the product, remove it from the list, and confirm my purchase
 ![Order Place Message](doc/images/Shopping-cart/OrderPlace.jpg)
 
 Then after while user will be redirect to **My Order** And my order will have a receipt of the info to the order 
-![Direct to My Order After Order Placed](
+![Direct to My Order After Order Placed](doc/images/Shopping-cart/My Order.jpg)
 
 
