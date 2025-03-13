@@ -27,3 +27,12 @@ We estimate development effort based on:
 | Customize a drink                     | UI changes + validation logic | 4 |
 | Shopping cart                         | Editing, removing, and confirming purchases | 3 |
 | View and Reorder Past Orders          | Order history filtering + reordering logic | 3 |
+
+
+
+
+
+
+
+
+
