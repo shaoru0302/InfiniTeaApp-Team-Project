@@ -36,7 +36,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 
 ## **Step 4: Select an Order for Reordering**
 - The user selects a **previously placed order** they want to reorder, also tap the "Reorder" button  
-![Select Past Order](../images/selected-past-order.jpg)
+![Select Past Order](../images/selected-past-orders.jpg)
 
 - The system checks the **availability of all items**.  
 - The user should see a confirmation message "Your drinks have been added to the cart!" 
