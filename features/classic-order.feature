@@ -3,11 +3,11 @@ Feature: Order menu item
   I want to order a classic drink online 
   So that I can avoid long wait times and recieve my menu drink within 5mins
 
-S - Reduces in-store wait time by ordering online  
-M - You get your drink within 5 minutes
-A - Can be completed in one agile iteration
-R - Goal is to improve the user experience via shorter wait times
-T - To be implemented by the end of May 2025
+# S - Reduces in-store wait time by ordering online  
+# M - You get your drink within 5 minutes
+# A - Can be completed in one agile iteration
+# R - Goal is to improve the user experience via shorter wait times
+# T - To be implemented by the end of May 2025
 
 Scenario: Ordering drink
     Given I am on the -Home Screen-
