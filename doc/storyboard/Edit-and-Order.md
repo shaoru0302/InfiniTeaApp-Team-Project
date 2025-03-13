@@ -52,8 +52,9 @@ So that I can edit the product, remove it from the list and confirm my purchase.
 -if user click the **Place Order** Then a order placed message will pop up to alarm the order is place 
 ![Order Place Message](../images/Shopping-cart/OrderPlace.jpg)
 
+
 -Then after while user will be redirect to **My Order** And my order will have a receipt of the info to the order 
-![Direct to My Order](../images/Shopping-cart/My Order.jpg)
+![Direct to My Order](../images/Shopping-cart/MyOrder.jpg)
 
 
 
