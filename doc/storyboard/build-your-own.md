@@ -11,12 +11,13 @@
 ![Menu Page](../images/classic-drink/order_homescreen.png)
 
 - Then the user will tap on **"Build your Own"** from the menu page.
-![Build Page](../images/build-your-own/build_screen.jpg)
+![List of Drinks](../images/classic-drink/order_start-order.png)
 
 ---
 
 ## **Step 2: Customize drink selectables**
-- The user sees a **selectable** options to customize their desired drink. Additionally they can select options such as **size**, **sugar**, and **ice** of their drink. 
+- The user sees **selectable** options to build their desired drink. Additionally they can select options such as **size**, **sugar**, and **ice** of their drink. 
+![Select Drink Options](../images/build-your-own/build_screen.jpg)
 
 - The user will select the drink size.
 ![Select Drink Options](../images/build-your-own/build_size.jpg)
@@ -36,7 +37,7 @@
 ---
 
 ## **Step 4: Add to Cart**
-- The user clicks **add to cart** then their drink appears on the **Shopping Cart**
+- The user clicks **add to Cart** then their drink appears on the **Shopping Cart**
 ![Shopping Cart](../images/classic-drink/order_add-cart.png)
 
 - if the user clicks **add to Cart** without selecting a **Tea base**, **Topping**, **Size**, **Ice**, or **Sugar**
