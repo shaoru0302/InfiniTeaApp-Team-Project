@@ -25,7 +25,7 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 ---
 
 ## **Step 4: Add to Cart**
-- The user clicks **add to cart** then their drink appears on the **Shopping Cart**
+- The user clicks **add to Cart** then their drink appears on the **Shopping Cart**
 ![Shopping Cart](../images/classic-drink/order_add-cart.png)
 
 - if the user clicks **add to Cart** without selecting a **drink option** 
@@ -34,7 +34,7 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 - if the user clicks **add to Cart** without selecting a drink **size** 
 ![<Drink Option: Size>](../images/classic-drink/order_no-size.png)
 
-- if the user clicks **add to Aart** without selecting the amount of **sugar** 
+- if the user clicks **add to Cart** without selecting the amount of **sugar** 
 ![<Drink Option: Sugar](../images/classic-drink/order_no-sugar.png)
 
 - if the user clicks **add to Cart** without selecting the amount **ice** 
