@@ -20,13 +20,13 @@
 
 ## **Scenario: I want to have multiple Toppings**
 - The user sees will select their desired toppings
-![Select Drink Options](../images/build-your-own/build_scenario_2.jpg)
+![Select Drink Options](../images/build-your-own/build_scenario_3.jpg)
 
 ---
 
 ## **Scenario: I want to only have 50% ice in my drink**
 - The user will select the 50% option in the ice section
-![Select Drink Options](../images/build-your-own/build_scenario_3.jpg)
+![Select Drink Options](../images/build-your-own/build_scenario_2.jpg)
 
 ---
 
