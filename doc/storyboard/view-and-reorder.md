@@ -19,7 +19,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
   
 ![Past Orders List](../images/past-order/past-orders-list.jpg)
 
-- If no past orders exist, tehn an **empty list** is displayed.
+- If no past orders exist, then an **empty list** is displayed.
   
 ![Past Orders List](../images/past-order/no-orders-list.jpg)
 
