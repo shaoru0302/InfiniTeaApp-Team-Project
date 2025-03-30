@@ -10,7 +10,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 
 ## **Scenario: Access past orders from the homepage**
 
-- I open the app and I am on the homepage, When I tap on **"My Orders"** button.
+- I open the app, and I am on the homepage, When I tap on **"My Orders"** button.
    
 ![My Orders Page](../images/past-order/home-page.jpg)
 
@@ -61,7 +61,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 
 ## **Scenario: Handle Out-of-Stock Items**
 
-- I am on the "My Orders" page, when I select my favorite drink from the list, if an item is **out of stock**, the system should show a warning message - "items are out of stock".  Then I can choose to **unselect the drinks to cancel the reorder** or **proceed with available items by pressing the reorder button**.
+- I am on the "My Orders" page, when I select my favorite drink from the list, if an item is **out of stock**, the system should show a warning message - "items are out of stock".  Then I can choose to **unselect the drinks to cancel the reorder** or **proceed with available items by tapping the reorder button**.
   
 ![Out of Stock Warning](../images/past-order/out-of-stock-warning.jpg)
 
