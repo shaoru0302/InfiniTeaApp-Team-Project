@@ -9,7 +9,7 @@ Feature: Order menu item
 # R - Goal is to improve the user experience via shorter wait times
 # T - To be implemented by the end of May 2025
 
-Scenario: Ordering drink
+Scenario: Ordering menu drink
     Given I am on the -Home Screen-
     When I click Start Order
     Then I am on the -Menu- page
