@@ -10,34 +10,58 @@ Feature: shopping cart
 # T - To be implemented by the end of May 2025
 
 
-Scenario: edit a product in the shopping cart
+Scenario: Veiw products in the shopping cart
    Given I am on the home screen
-   When I am on the shopping cart page
-   Then I click a product shown in the cart list
-   Then I will be taken back to the order page, I should be able to modify product details
-   And the changes should be updated in the cart
+   When I click to the shopping cart button
+   Then I should be taken to the "Shopping Cart" page
+   Then I should see the product that were added to the shopping cart
+   And if nothing is on the cart yet ,it will display Empty
+
+
+Scenario: Edit products on the shopping cart
+  Given I am on the shopping cart page
+  When I click a product listed in the cart
+  Then I will be redirected to the "My Orders" page with the pre-recorded details of the product
+  And if I change the size from Large to Small and click the "Add to Cart" button
+  Then the change will be immediately updated in the shopping cart
+  But if I make the change but do not click the "Add to Cart" button and instead click the back arrow
+  Then I will return to the shopping page without any changes being saved
+    
+
+
+
+Scenario: Remove a product from the list
+  Given I am on the shopping cart
+  When I click the "X" mark on the right-hand side of the product
+  Then a confirm message will pop up and ask "Sure to remove?" 
+  When click confirm button
+  Then the product should be removed from the list
+  And the update will be applie to the cart  
+  And if click cancel button  
+  Then not change were made
+
 
 Scenario: Remove all products from the list
-    Given I am on the shopping cart
-    When I click the "Remove All" button
-    Then all the products on the list will be removed
-    And the Remove All button will be disable
-    And the change will be updated  
+  Given I am on the shopping cart
+  When I click the "Remove All" button
+  Then a confirm message will pop up and ask "Sure to remove All"
+  When user click confirm button
+  Then all the products on the list will be removed
+  And the change will be updated
+  And the Remove All button and Order button will turn Dim indicate fucntion disable
     
 Scenario: Confirm order
-    Given I am on the shopping cart
-    When I click the "Order" button
-    Then the order will be placed
-    Then users will be automatically back to the home page 
-    And if the cart is empty, the order button will be disabled
+  Given I am on the shopping cart
+  When I click the "Order" button
+  Then a message will be pop out say "Order Confirm "
+  Then i click the "confirm " button
+  Then a "Successful" message will pop out
+  Then the order placed
+  Then i will be direct to a page that show the detail of the order 
+  Then 10 secon later i will be automatically direct back to the Home page 
+    
    
-Scenario: Remove a product from the list
-    Given I am on the shopping cart
-    When I click the "X" mark on the right-hand side of the product
-    Then a comfirm message will pop up and ask "Sure to remove items?" 
-    When click confirm button
-    Then the product should be removed from the list
-    And the update will be applie to the cart 
+
 
 
 
