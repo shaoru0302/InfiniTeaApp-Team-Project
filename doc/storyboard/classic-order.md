@@ -7,7 +7,7 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 [User Story](../../features/classic-order.feature)
 
 ## **Scenario: Ordering menu drink**
-- The user opens the app and taps on **"My Orders"** from the homepage.
+- The user opens the app and taps on **"Start Order"** from the homepage.
 
 ![Menu Page](../images/classic-drink/order_homescreen.png)
 
