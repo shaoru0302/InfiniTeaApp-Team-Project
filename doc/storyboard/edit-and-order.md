@@ -30,6 +30,7 @@ So that I can edit the product, remove it from the list and confirm my purchase.
 ## **Scenario: Edit products through the shopping cart**
 
 -I am on the shopping cart page
+
 -I click a product listed in the cart
 
 ![ product on cart](../images/Shopping-cart/Shopping-cart-with-product.png)
@@ -59,22 +60,26 @@ So that I can edit the product, remove it from the list and confirm my purchase.
 ## **Scenario: Remove a product from the list**
 
 -I'm on the Shopping cart
+
 -I click the "X" mark on the right-hand side of the product
 
 ![Remove with X](../images/Shopping-cart/Click-X-Mark.png)
 
 -A confirm message will pop up and ask "Sure to remove?"
+
 -Then I click confirm button
 
 ![Remove with X confirm message](../images/Shopping-cart/Remove-from-x-mark-message-confirm.png)
 
 -Then the product should be removed from the list
+
 -And the update will be applied to the cart  
 
 
 ![Remove with X Update](../images/Shopping-cart/Removed-From-X-Mark.png)
 
 -And if click cancel button  
+
 -Then not change were made
 
 ![cancel confirm](../images/Shopping-cart/Shopping-cart-with-product.png)
@@ -85,6 +90,7 @@ So that I can edit the product, remove it from the list and confirm my purchase.
 
 
 -I am on the shopping cart
+
 -When I click the "Remove All" button
 
 ![Remove All](../images/Shopping-cart/Click-remove-all.png)
@@ -95,6 +101,7 @@ So that I can edit the product, remove it from the list and confirm my purchase.
 ![Remove All message ](../images/Shopping-cart/Remove-All.png)
 
 -Then all the products on the list will be removed
+
 -And the change will be updated
 
 ![Remove All confirmed](../images/Shopping-cart/Empty-Shopping-cart.png)
@@ -106,11 +113,13 @@ So that I can edit the product, remove it from the list and confirm my purchase.
 ## **Scenario: Confirm order **
 
 -I am on the shopping cart
+
 -When I click the **"Order"** button
 
 ![click order button](../images/Shopping-cart/Click-Order.png)
 
 -Then a message will be pop out say "Order Confirm "
+
 - i click the "confirm " button
 
 ![click confirm button for order](../images/Shopping-cart/Order-confirm-message.png)
