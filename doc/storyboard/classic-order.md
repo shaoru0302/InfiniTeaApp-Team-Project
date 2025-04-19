@@ -100,6 +100,6 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 
 -The user sees their **Order Details**.
 
->>>>>>> 4d79ca57f0ab4a0c4d4fc119c802063542157d5e
+
 ![Order Details](../images/classic-drink/order_order-details.png)
 
