@@ -3,6 +3,7 @@ Feature: Order menu item
   I want to order a classic drink online 
   So that I can avoid long wait times and recieve my menu drink within 5mins
 
+<<<<<<< HEAD
 S - Reduces in-store wait time by ordering online  
 M - You get your drink within 5 minutes
 A - Can be completed in one agile iteration
@@ -10,6 +11,15 @@ R - Goal is to improve the user experience via shorter wait times
 T - To be implemented by the end of May 2025
 
 Scenario: Ordering drink
+=======
+# S - Reduces in-store wait time by ordering online  
+# M - You get your drink within 5 minutes
+# A - Can be completed in one agile iteration
+# R - Goal is to improve the user experience via shorter wait times
+# T - To be implemented by the end of May 2025
+
+Scenario: Ordering menu drink
+>>>>>>> 4d79ca57f0ab4a0c4d4fc119c802063542157d5e
     Given I am on the -Home Screen-
     When I click Start Order
     Then I am on the -Menu- page
