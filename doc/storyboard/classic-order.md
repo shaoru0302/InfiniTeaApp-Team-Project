@@ -69,7 +69,7 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 
 - if the user clicks **add to Cart** without selecting the amount **ice**
 
->>>>>>> 4d79ca57f0ab4a0c4d4fc119c802063542157d5e
+
 ![<Drink Option: Ice](../images/classic-drink/order_no-ice.png)
 
 ---
