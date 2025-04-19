@@ -54,7 +54,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
   
 ![Past Orders List](../images/past-order/no-orders-list.jpg)
 
-<<<<<<< HEAD
+
 ## **Step 4: Select an Order for Reordering**
 - The user selects a **previously placed order** they want to reorder, also tap the "Reorder" button  
 ![Select Past Order](../images/selected-past-orders.jpg)
@@ -62,13 +62,11 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 - The system checks the **availability of all items**.  
 - The user should see a confirmation message "Your drinks have been added to the cart!" 
 ![Order Added to Cart](../images/order-added.jpg)
-=======
->>>>>>> 4d79ca57f0ab4a0c4d4fc119c802063542157d5e
+
 
 ---
 
 
-<<<<<<< HEAD
 ## **Step 5: Handle Out-of-Stock Items**
 - If an item is **out of stock**, the system shows a warning message - "items are out of stock".  
 - The user can **proceed with available items** or **unselect the items to cancel the reorder**.  
@@ -80,7 +78,7 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 - The user taps the "Reorder" button again, and the order is successfully **added to the shopping cart**.  
 - The user sees a confirmation message **"Your updated order has been added to the cart!"**  
 ![Order Added to Cart](../images/order-updated.jpg)
-=======
+
 ## **Scenario: Search and filter my past orders by order number**
 
 - I am on the "My Orders" page, when I enter an **order number** in the search bar to find a specific past order.
@@ -122,4 +120,4 @@ So that I can quickly track my purchases and effortlessly reorder my favorite dr
 - When I tap the "Reorder" button, and the order is successfully **added to the shopping cart**. I should see a confirmation message - **"Your updated order has been added to the cart!"**
   
 ![Order Added to Cart](../images/past-order/order-updated.jpg)
->>>>>>> 4d79ca57f0ab4a0c4d4fc119c802063542157d5e
+
