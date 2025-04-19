@@ -53,7 +53,7 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 ![<Drink Option: Sugar](../images/classic-drink/order_no-sugar.png)
 
 - if the user clicks **add to Cart** without selecting the amount **ice** 
-=======
+  
 ## **Scenario: Didn't choose drink option**
 - if the user clicks **add to Cart** without selecting a **drink option**
 
@@ -74,7 +74,7 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 
 ---
 
-<<<<<<< HEAD
+
 
 ## **Step 5: Order Confirmation**
 - The user clicks **place Order**, then a pop-up appears asking users if they are sure.
@@ -84,7 +84,7 @@ So that I can avoid long wait times and recieve my menu drink within 5mins.
 ![Success](../images/classic-drink/order_order-success.png)
 
 -The user sees their **Order Details**.
-=======
+
 ## **Scenario: Order Confirmation**
 - The user clicks **add to Cart** then their drink appears on the **Shopping Cart**
 
