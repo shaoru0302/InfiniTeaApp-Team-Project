@@ -54,7 +54,7 @@
 
 -The user sees their **Order Details**.
 ![Order Details](../images/classic-drink/order_order-details.png)
-=======
+
 As a customer,
 I want to customize my own drink,
 So that I can build my favorite drink within 5 minutes.
@@ -93,4 +93,4 @@ So that I can build my favorite drink within 5 minutes.
 
 -The user will be sent back to the **Menu** page
 ![List of Drinks](../images/classic-drink/order_start-order.png)
->>>>>>> 4d79ca57f0ab4a0c4d4fc119c802063542157d5e
+
