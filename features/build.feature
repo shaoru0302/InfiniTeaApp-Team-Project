@@ -3,11 +3,11 @@ Feature: Customizing the order
  I want to customize my own drink,
  So that I can build my favorite drink within 5 minutes.
 
-# S - Allowing the customer to create their own drink.
-# M - The user can build and order their drink within 5 minutes.
-# A - This can be completed within an agile iteration.
-# R - Allowing the customer to have their perfect drink.
-# T - To be completed by the end of May 2025.
+S - Allowing the customer to create their own drink.
+M - The user can build and order their drink within 5 minutes.
+A - This can be completed within an agile iteration.
+R - Allowing the customer to have their perfect drink.
+T - To be completed by the end of May 2025.
 
 Scenario: I want to go to -Build your own- page
   Given I am on the home screen,
@@ -30,4 +30,5 @@ Scenario: I have finished building my drink.
   Given I'm on the "Build your own" screen,
   When I click "Place Order",
   Then It will be added to the cart and I will be taken to the -Menu- page.
+  
   
