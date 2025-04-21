@@ -1,14 +1,13 @@
 Feature: View and Reorder Past Orders
+ As a customer using the App,
+ I want to access my past orders from the homepage and reorder drinks,
+ So that I can quickly track my purchases and effortlessly reorder my favorite drinks.
 
-As a customer using the App,
-I want to access my past orders from the homepage and reorder drinks,
-So that I can quickly track my purchases and effortlessly reorder my favorite drinks.
-
-# S - Users should be able to click "My Orders" from the homepage, view past orders, and reorder in one tap.
-# M - Users should reach their order history within 2 seconds and reorder in 1 tap.
-# A - This feature can be implemented within one agile iteration.
-# R - It enhances user convenience by making order tracking and reordering seamless.
-# T - This feature will be completed and tested by the end of May 2025.
+S - Users should be able to click "My Orders" from the homepage, view past orders, and reorder in one tap.
+M - Users should reach their order history within 2 seconds and reorder in 1 tap.
+A - This feature can be implemented within one agile iteration.
+R - It enhances user convenience by making order tracking and reordering seamless.
+T - This feature will be completed and tested by the end of May 2025.
 
 Scenario: Access past orders from the homepage  
    Given I am on the homepage  
