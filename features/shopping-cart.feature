@@ -3,11 +3,11 @@ Feature: shopping cart
   I want to view the listed products I have added to the cart
   So that I can edit the product, remove it from the list, and confirm my purchase
 
-# S - Allow customers to view, edit, remove, and confirm the list of products they have selected in their shopping cart
-# M - Customers should be able to remove, edit, and confirm the purchase within minutes 
-# A - This can be achieved within a agile iteration (one week)
-# R - Customers should be able to easily manage their cart, ensuring a smooth and hassle-free shopping experience
-# T - To be implemented by the end of May 2025
+S - Allow customers to view, edit, remove, and confirm the list of products they have selected in their shopping cart
+M - Customers should be able to remove, edit, and confirm the purchase within minutes 
+A - This can be achieved within a agile iteration (one week)
+R - Customers should be able to easily manage their cart, ensuring a smooth and hassle-free shopping experience
+T - To be implemented by the end of May 2025
 
 
 Scenario: Veiw products in the shopping cart
