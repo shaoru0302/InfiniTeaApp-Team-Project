@@ -1,4 +1,4 @@
-// Scenario 1 Access MyOrders from homePage: RED – UI Test for access past orders
+// Scenario 1: RED – UI Test for access past orders and view past orders
 package com.example.myorderfeature;
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
@@ -33,7 +33,7 @@ public class MyOrdersUITest {
         Intents.release();
     }
 
-    // Scenario 1: RED test
+    // Scenario 1: RED test for viewing past orders
     @Test
     public void testAccessPastOrders() {
         onView(withId(R.id.btn_my_orders)).perform(click());
