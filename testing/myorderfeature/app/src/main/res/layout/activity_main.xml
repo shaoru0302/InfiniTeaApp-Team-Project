@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/infinitea_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/infinitea_app"
+            android:text="@string/infinitea_app"
+            android:textColor="#FF2E7D32"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingTop="?attr/actionBarSize"/>
+
+        <Button
+            android:id="@+id/btn_start_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_order"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_cart"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_my_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_orders" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base App Theme (for AppCompatActivity) -->
+    <style name="Theme.MyOrderFeature" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary branding colors -->
+        <item name="colorPrimary">#66BB6A</item>
+        <item name="colorPrimaryDark">#388E3C</item>
+        <item name="colorAccent">#FF4081</item>
+
+        <!-- Customize as needed -->
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+
+</resources>
