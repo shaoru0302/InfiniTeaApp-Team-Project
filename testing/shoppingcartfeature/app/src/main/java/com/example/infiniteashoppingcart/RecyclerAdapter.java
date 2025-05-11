@@ -4,6 +4,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,12 +12,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+
+
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> {
     private ArrayList<BubbleTea> bubbleTeaList;
+
+    private static boolean removeButtonVisibility =true;
+
+
+
 
     public RecyclerAdapter(ArrayList<BubbleTea> bubbleTeaList ){
         this.bubbleTeaList=bubbleTeaList;
     }
+
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
         private TextView nameText;
@@ -28,6 +37,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         private TextView iceLevelText;
 
         private TextView sugarLevelText;
+        private Button removeButton;
+
+
+
+
+
+
 
         public MyViewHolder(final View view){
             super(view);
@@ -38,6 +54,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             toppingText=view.findViewById(R.id.topping);
             iceLevelText=view.findViewById(R.id.iceLevel);
             sugarLevelText=view.findViewById(R.id.sugarLevel);
+            removeButton=view.findViewById(R.id.removeSingleButton);
+
 
 
         }
@@ -72,9 +90,19 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         holder.sugarLevelText.setText("Sugar: "+sugarLevel);
         holder.iceLevelText.setText("IceLevel: "+iceLevel);
 
-
-
-
+        if (removeButtonVisibility) {
+            holder.removeButton.setVisibility(View.VISIBLE);
+            holder.removeButton.setOnClickListener(v -> {
+                int pos = holder.getAdapterPosition();
+                if (pos != RecyclerView.NO_POSITION) {
+                    bubbleTeaList.remove(pos);
+                    notifyItemRemoved(pos);
+                    notifyItemRangeChanged(pos, bubbleTeaList.size());
+                }
+            });
+        } else {
+            holder.removeButton.setVisibility(View.GONE);
+        }
 
     }
 
@@ -82,4 +110,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     public int getItemCount() {
         return bubbleTeaList.size();
     }
+
+    public static void SetRemoveButtonVisible(boolean value){
+
+        removeButtonVisibility =value;
+    }
+
 }
+

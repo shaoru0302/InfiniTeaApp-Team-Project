@@ -40,7 +40,7 @@ public class Cart extends AppCompatActivity {
         setContentView(R.layout.activity_cart);
         bubbleTeaList = new ArrayList<>();
         recyclerView =findViewById(R.id.recyclerView);
-
+        RecyclerAdapter.SetRemoveButtonVisible(true);
 
 
 
@@ -48,6 +48,7 @@ public class Cart extends AppCompatActivity {
         setAdaptor();
         TextView totalPriceText = findViewById(R.id.totalPrice);
         totalPriceText.setText("Total: $ "+CalculateTotalPrice(bubbleTeaList));
+
 
 
     }
@@ -58,6 +59,8 @@ public class Cart extends AppCompatActivity {
             Intent intent = new Intent(this,Receipt.class);
             startActivity(intent);
             PassDataFromListToStaticList();
+            bubbleTeaList.clear();
+
         }else{
 
         }
@@ -93,6 +96,8 @@ public class Cart extends AppCompatActivity {
 
     }
 
+
+
    public void RemoveAll(View view){
 
 
@@ -125,10 +130,14 @@ public class Cart extends AppCompatActivity {
     }
 
     public void PassDataFromListToStaticList(){
+        staticBubbleTeaList.clear();
         for(BubbleTea bubbleTea:this.bubbleTeaList){
             staticBubbleTeaList.add(bubbleTea);
         }
     }
+
+
+
 
 
 

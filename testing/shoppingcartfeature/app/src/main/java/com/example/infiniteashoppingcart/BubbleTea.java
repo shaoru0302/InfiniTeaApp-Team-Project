@@ -20,19 +20,6 @@ public class BubbleTea {
         this.sugarLevel=sugarLevel;
 
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
     public String getName() {
         return name;
     }
