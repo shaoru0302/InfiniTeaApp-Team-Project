@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/sugarText"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="536dp"
+        android:text="Sugar"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/iceText"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="324dp"
+        android:text="Ice"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drinkText"
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Drink name"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sizeText"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
+        android:text="Size"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/sizeGroup"
+        android:layout_width="90dp"
+        android:layout_height="144dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/sizeLarge"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="Large" />
+
+        <RadioButton
+            android:id="@+id/sizeMedium"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/sizeSmall"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="Small" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/iceGroup"
+        android:layout_width="90dp"
+        android:layout_height="144dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/iceRegular"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="Regular" />
+
+        <RadioButton
+            android:id="@+id/iceLess"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="Less" />
+
+        <RadioButton
+            android:id="@+id/iceNone"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="None" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/sugarGroup"
+        android:layout_width="90dp"
+        android:layout_height="144dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="572dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/sugarRegular"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="Regular" />
+
+        <RadioButton
+            android:id="@+id/sugarHalf"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="Half" />
+
+        <RadioButton
+            android:id="@+id/sugarNone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="None" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="648dp"
+        android:text="Submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

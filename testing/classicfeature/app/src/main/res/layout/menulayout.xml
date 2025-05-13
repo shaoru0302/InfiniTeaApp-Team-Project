@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/matchaText"
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="520dp"
+        android:gravity="center"
+        android:text="A creamy and refreshing flavor"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/matchaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="520dp"
+        android:gravity="center"
+        android:text="Matcha milk tea"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/roseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="376dp"
+        android:gravity="center"
+        android:text="Rose milk tea"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thaiText"
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="224dp"
+        android:gravity="center"
+        android:text="A creamy Tea with bold Thai flavors"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infiniteaText"
+        android:layout_width="188dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="80dp"
+        android:text="Infinitea"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/thaiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:gravity="center"
+        android:text="Thai milk tea"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roseText"
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="376dp"
+        android:gravity="center"
+        android:text="A fragrant but mellow rose tea"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
