@@ -1,4 +1,4 @@
-//Scenario 2: Modifying drinks after selection
+//Scenario 3: Modifying drinks after selection
 package com.example.classicdrink;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -24,19 +24,56 @@ class SecondActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.optionlayout)
         enableEdgeToEdge()
+        val intent = intent
+        val modifyDrink = intent.getStringExtra("SELECTED_DRINK")
+        val modifySize = intent.getStringExtra("SELECTED_SIZE")
+        val modifyIce = intent.getStringExtra("SELECTED_ICE")
+        val modifySugar = intent.getStringExtra("SELECTED_SUGAR")
+        val drinkText = intent.getStringExtra("drinkText")
 
         val textView = findViewById<TextView>(R.id.drinkText)
-        val text = intent.getStringExtra("buttonText")
+        if (drinkText != null){
+            textView.text = drinkText
+        } else if (modifyDrink != null) {
+            textView.text = modifyDrink
+        }
+
+        /*val text = intent.getStringExtra("drinkText")
         text?.let{
             textView.text = it
-        }
+        }*/
 
         val sizeRadioGroup = findViewById<RadioGroup>(R.id.sizeGroup)
         val iceRadioGroup = findViewById<RadioGroup>(R.id.iceGroup)
         val sugarRadioGroup = findViewById<RadioGroup>(R.id.sugarGroup)
-        val submitButton = findViewById<Button>(R.id.submitButton)
 
-        submitButton.setOnClickListener{
+        fun selectRadioButtonByText(radioGroup: RadioGroup, value: String?) {
+            if (value == null) return
+            for (i in 0 until radioGroup.childCount) {
+                val rb = radioGroup.getChildAt(i) as? RadioButton
+                if (rb != null && rb.text.toString() == value) {
+                    rb.isChecked = true
+                    break
+                }
+            }
+        }
+
+        // Set the RadioButtons based on the transferred data
+        selectRadioButtonByText(sizeRadioGroup, modifySize)
+        selectRadioButtonByText(iceRadioGroup, modifyIce)
+        selectRadioButtonByText(sugarRadioGroup, modifySugar)
+
+
+        val cartButton = findViewById<Button>(R.id.submitButton)
+        val backButton = findViewById<Button>(R.id.backButton)
+
+        backButton.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        cartButton.setOnClickListener{
             val selectedSizeId = sizeRadioGroup.checkedRadioButtonId
             val selectedIceId = iceRadioGroup.checkedRadioButtonId
             val selectedSugarId = sugarRadioGroup.checkedRadioButtonId
@@ -69,6 +106,7 @@ class SecondActivity : ComponentActivity() {
             intent.putExtra("SELECTED_SIZE", selectedSize)
             intent.putExtra("SELECTED_ICE", selectedIce)
             intent.putExtra("SELECTED_SUGAR", selectedSugar)
+            intent.putExtra("drinkText", textView.text.toString())
 
             startActivity(intent)
         }

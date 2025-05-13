@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
             if (v is Button){
                 val text = v.text.toString()
                 val intent = Intent(this, SecondActivity::class.java)
-                intent.putExtra("buttonText", text)
+                intent.putExtra("drinkText", text)
                 startActivity(intent)
             }
         }
