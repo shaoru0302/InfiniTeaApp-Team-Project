@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubble_tea_bg"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ShoppingCartActivity">
+
+    <!-- Title Row (Back + Title) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:onClick="goBackToHome"
+            android:padding="0dp"/>
+
+        <TextView
+            android:id="@+id/cartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_cart"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            android:textColor="#FF2E7D32"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <!-- Cart Items List -->
+    <ListView
+        android:id="@+id/cartDrinkList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="#FFF5F5F5"/>
+
+    <!-- Cart Summary Section -->
+    <!-- Order Number Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/cartOrderNumberLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Order #:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cartOrderNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="001"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Subtotal Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/cartSubtotalLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subtotal:"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cartSubtotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- Tax Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/cartTaxLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tax:"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cartTaxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- Total Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/cartTotalLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cartTotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <!-- Buttons Section (Horizontal Row) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_clear_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/LightBlueButton"
+            android:layout_weight="1"
+            android:text="@string/clear_cart"
+            android:onClick="clearCart"
+            android:textColor="#FF555555"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_place_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/LightBlueButton"
+            android:layout_weight="1"
+            android:text="Place Order"
+            android:onClick="placeOrder"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#FF2E7D32"/>
+    </LinearLayout>
+
+</LinearLayout>

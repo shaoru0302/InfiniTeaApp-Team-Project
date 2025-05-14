@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuildYourOwnActivity"
+    android:padding="16dp"
+    android:background="@drawable/bubble_tea_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:onClick="goBackToHome"
+                android:padding="0dp" />
+
+            <TextView
+                android:id="@+id/chooseDrinkTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Build Your Own"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Customize Button -->
+        <Button
+            android:id="@+id/btnCustomizeDrink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/LightBlueButton"
+            android:text="Make Your Drink"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:backgroundTint="#DCEDC8"
+            android:textColor="#33691E"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Available Toppings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Toppings"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <ListView
+            android:id="@+id/listAvailableToppings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="300dp"
+            android:scrollbars="vertical"
+            android:background="@android:color/white"
+            android:divider="#CCCCCC"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp" />
+
+        <!-- Selected Toppings -->
+        <TextView
+            android:id="@+id/selectedToppings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Toppings"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <ListView
+            android:id="@+id/listSelectedToppings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="300dp"
+            android:scrollbars="vertical"
+            android:background="@android:color/white"
+            android:divider="#CCCCCC"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp" />
+
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subtotal: $0.00\nTax: $0.00\nTotal: $0.00"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:singleLine="false"
+                android:maxLines="3" />
+        </LinearLayout>
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD TO CART"
+            android:onClick="addToCart"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

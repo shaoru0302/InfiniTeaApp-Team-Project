@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubble_tea_bg"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp">
+
+<!-- App Title -->
+<TextView
+    android:id="@+id/infinitea_app"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/infinitea_app"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:textColor="#FF2E7D32"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="20dp" />
+
+<!-- Cute Logo Image -->
+    <ImageView
+        android:id="@+id/bubble_tea_image"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bubble_tea_logo"
+        android:contentDescription="Bubble Tea"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true" />
+
+<!-- Start Order Button -->
+    <Button
+        android:id="@+id/btn_start_order"
+        style="@style/LightBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_order"
+        android:textStyle="bold"
+        />
+
+
+<!-- Shopping Cart Button -->
+    <Button
+        android:id="@+id/btn_shopping_cart"
+        style="@style/LightBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/shopping_cart"
+        android:textStyle="bold"
+        />
+
+<!-- My Orders Button -->
+    <Button
+        android:id="@+id/btn_my_orders"
+        style="@style/LightBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/my_orders"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+    </ScrollView>

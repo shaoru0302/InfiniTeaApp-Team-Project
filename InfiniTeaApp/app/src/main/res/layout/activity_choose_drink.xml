@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubble_tea_bg"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".ChooseDrinkActivity">
+
+    <!-- Title Row (Back Button + Title) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:onClick="goBackToHome"
+            android:padding="0dp"/>
+
+        <TextView
+            android:id="@+id/chooseDrinkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_your_drink"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            android:textColor="#FF2E7D32"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:id="@+id/priceGuideText"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Price:\nS: $5.25\nM: $6.00\nL: $6.75"
+            android:textColor="#FF2E7D32"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!-- Menu List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drinkRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
+    <!-- Section for choosing classic drink -->
+    <LinearLayout
+        android:id="@+id/customizeSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/selectedDrinkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_your_drink"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Size -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinnerSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Sugar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sugar"
+            android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinnerSugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ice -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ice"
+            android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinnerIce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Quantity Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnDecreaseQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <EditText
+                android:id="@+id/editQuantity"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnIncreaseQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_cart"
+            android:onClick="addToCart"/>
+    </LinearLayout>
+
+    <!-- Build Your Own Button at Bottom -->
+    <Button
+        android:id="@+id/btnBuildYourOwn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LightBlueButton"
+        android:text="@string/build_your_own"
+        android:textColor="#FFFFFFFF"
+        android:backgroundTint="#FF2E7D32"
+        android:layout_marginTop="12dp"
+        android:onClick="BuildYourOwn"
+        tools:ignore="OnClick"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cart_total_price" type="id" />
+    <item name="btn_reorder" type="id" />
+    <item name="cartTitle" type="id" />
+    <item name="cartDrinkList" type="id" />
+    <item name="cartOrderNumberText" type="id" />
+    <item name="cartSubtotalText" type="id" />
+    <item name="cartTaxText" type="id" />
+    <item name="cartTotalText" type="id" />
+    <item name="selectedToppings" type="id" />
+</resources>

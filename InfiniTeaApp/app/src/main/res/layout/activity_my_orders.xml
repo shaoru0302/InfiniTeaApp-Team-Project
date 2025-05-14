@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubble_tea_bg"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MyOrdersActivity">
+
+    <!-- Back button + Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:onClick="goBackToHome"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/orders_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_orders"
+            android:textColor="#FF2E7D32"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+    <!-- Filter -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_number"
+        android:textColor="#FF555555"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/search_order_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/search_by_order_number"
+        android:inputType="text"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Empty message -->
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_orders_yet"
+        android:textColor="#FF777777"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- RecyclerView list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orders_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFF5F5F5"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        android:scrollbars="vertical" />
+
+    <!-- Status message -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF000000"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="8dp" />
+
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/print_receipt_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#FF2E7D32"
+            android:onClick="PrintReceipt"
+            android:text="@string/print_receipt"
+            android:backgroundTint="#FFF9C4"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/reorder_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#FF1976D2"
+            android:onClick="ReorderOrder"
+            android:text="@string/reorder"
+            android:backgroundTint="#DCEDC8"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_delete_order"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_order"
+            android:onClick="DeleteOrder"
+            android:backgroundTint="#E1BEE7"
+            android:textColor="#FFD32F2F"/>
+    </LinearLayout>
+
+</LinearLayout>
