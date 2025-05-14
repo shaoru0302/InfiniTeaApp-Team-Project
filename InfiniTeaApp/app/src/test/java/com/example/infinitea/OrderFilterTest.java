@@ -31,8 +31,8 @@ public class OrderFilterTest {
         order1.add(drink1);
         orders.add(order1);
 
-        // 构造订单 2
-        Order order2 = new Order(order1.getOrderNumber());  // 第二个订单编号是 2
+        
+        Order order2 = new Order(order1.getOrderNumber()); 
         MilkTea drink2 = new MilkTea(
                 "Thai Bubble Milk Tea",
                 "Classic Thai tea",
