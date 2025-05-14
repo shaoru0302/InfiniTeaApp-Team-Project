@@ -1,4 +1,4 @@
-// classicdrink feature: Scenario: Espresso test for selecting size/sugar/ice for classic drink
+// classic feature: Scenario: Espresso test for selecting size/sugar/ice for classic drink
 package com.example.infinitea;
 
 import static androidx.test.espresso.Espresso.onView;
