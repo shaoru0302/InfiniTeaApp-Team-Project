@@ -1,7 +1,6 @@
 package com.example.infinitea;
 /**
  * Enum class for holding a list of toppings with a specific String name.
- * @author shaoru
  */
 
 public enum Topping {
