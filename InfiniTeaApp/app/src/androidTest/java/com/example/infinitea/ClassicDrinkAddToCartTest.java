@@ -1,4 +1,4 @@
-// classicdrink feature: Scenario: Test selecting drink options and adding to cart
+// classic feature: Scenario: Test selecting drink options and adding to cart
 package com.example.infinitea;
 
 import static androidx.test.espresso.Espresso.onView;
