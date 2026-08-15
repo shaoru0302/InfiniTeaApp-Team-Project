@@ -1,6 +1,6 @@
 # User Story (previous Velocity):
 | User Story                               | Effort Level                                | Points |
-|------------------------------------------|---------------------------------------------|        |
+|------------------------------------------|---------------------------------------------|--------|
 | Order a menu item                        | Standard order placement (UI + API)         |   3    |
 | Customize a drink                        | UI changes + validation logic               |   4    |
 | Shopping cart                            | Editing, removing, and confirming purchases |   3    |
